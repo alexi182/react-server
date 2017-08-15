@@ -1,15 +1,21 @@
-import React from 'react';
+var React = require('react');
 
-export default class Layout extends React.Component {
-   constructor(props) {
-      super(props);
+module.exports = React.createElement({
+   render: function () {
+      return React.createElement('h1', null, 'Hello world');
    }
+});
 
-   render() {
-      return (
-          <div className="page">
-               Привет
-          </div>
-      );
-   }
-}
+// export default class Layout extends React.Component {
+//    constructor(props) {
+//       super(props);
+//    }
+//
+//    render() {
+//       return (
+//           <div className="page">
+//                Привет
+//           </div>
+//       );
+//    }
+// }
